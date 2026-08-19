@@ -11,8 +11,7 @@ SITEMAP_URL = "https://www.pokemoncenter.com/sitemaps/pages.xml"
 STATE_FILE = Path("state.json")
 
 DISCORD_WEBHOOK = os.getenv("DISCORD_WEBHOOK", "").strip()
-if DISCORD_WEBHOOK:
-    requests.post(DISCORD_WEBHOOK, json={"content": "🧪 **Pokémon Center Drop Radar — TEST SUCCESSFUL**\nGitHub → Radar → Discord → iPhone is working."}, timeout=15).raise_for_status()
+
 WATCH_TERMS = [
     "elite trainer box",
     "etb",
